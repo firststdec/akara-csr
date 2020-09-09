@@ -17,12 +17,6 @@
   ._txt-md-right { text-align: right !important; }
 }
 
-@include mq-up(lg) {
-  ._txt-lg-left { text-align: left !important; }
-  ._txt-lg-center { text-align: center !important; }
-  ._txt-lg-right { text-align: right !important; }
-}
-
 /* ==========================================================
  Text weight
 ========================================================== */
@@ -63,14 +57,6 @@
 @include mq-up(md) {
   @for $i from 8 through 30 {
     ._txt-md-size-#{$i} {
-      font-size: #{$i / 10}rem !important;
-    }
-  }
-}
-
-@include mq-up(lg) {
-  @for $i from 8 through 30 {
-    ._txt-lg-size-#{$i} {
       font-size: #{$i / 10}rem !important;
     }
   }

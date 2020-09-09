@@ -17,4 +17,9 @@
     height: 50px;
     font-size: 1.7rem;
   }
+
+  &--blue {
+    background-color: $blue;
+    color: $white;
+  }
 }

@@ -105,41 +105,6 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   }
 }
 
-@include mq-up(lg) {
-  @each $space in $spaceamounts {
-    @each $side in $sides {
-      ._m#{str-slice($side, 0, 1)}-lg-#{$space} {
-        margin-#{$side}: #{$space}px !important;
-      }
-      ._m-lg-#{$space} {
-        margin: #{$space}px !important;
-      }
-      ._mx-lg-#{$space} {
-        margin-left: #{$space}px !important;
-        margin-right: #{$space}px !important;
-      }
-      ._my-lg-#{$space} {
-        margin-top: #{$space}px !important;
-        margin-bottom: #{$space}px !important;
-      }
-      ._p#{str-slice($side, 0, 1)}-lg-#{$space} {
-        padding-#{$side}: #{$space}px !important;
-      }
-      ._px-lg-#{$space} {
-        padding-left: #{$space}px !important;
-        padding-right: #{$space}px !important;
-      }
-      ._py-lg-#{$space} {
-        padding-top: #{$space}px !important;
-        padding-bottom: #{$space}px !important;
-      }
-      ._p-lg-#{$space} {
-        padding: #{$space}px !important;
-      }
-    }
-  }
-}
-
 ._m-0 {
   margin: 0 !important;
 }
@@ -166,17 +131,6 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   }
 
   ._mx-md-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
-@include mq-up(lg) {
-  ._m-lg-0 {
-    margin: 0 !important;
-  }
-
-  ._mx-lg-auto {
     margin-left: auto !important;
     margin-right: auto !important;
   }

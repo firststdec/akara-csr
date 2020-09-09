@@ -31,15 +31,3 @@
   ._d-md-flex { display: flex !important; }
   ._d-md-inline-flex { display: inline-flex !important; }
 }
-
-@include mq-up(lg) {
-  ._d-lg-none { display: none !important; }
-  ._d-lg-inline { display: inline !important; }
-  ._d-lg-inline-block { display: inline-block !important; }
-  ._d-lg-block { display: block !important; }
-  ._d-lg-table { display: table !important; }
-  ._d-lg-table-row { display: table-row !important; }
-  ._d-lg-table-cell { display: table-cell !important; }
-  ._d-lg-flex { display: flex !important; }
-  ._d-lg-inline-flex { display: inline-flex !important; }
-}
