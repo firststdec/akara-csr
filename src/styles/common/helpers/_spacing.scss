@@ -1,0 +1,183 @@
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120); // Adjust this to include the pixel amounts you need.
+
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    ._m#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+    ._mx-#{$space} {
+      margin-left: #{$space}px !important;
+      margin-right: #{$space}px !important;
+    }
+    ._my-#{$space} {
+      margin-top: #{$space}px !important;
+      margin-bottom: #{$space}px !important;
+    }
+    ._m-#{$space} {
+      margin: #{$space}px !important;
+    }
+    ._p#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+    ._px-#{$space} {
+      padding-left: #{$space}px !important;
+      padding-right: #{$space}px !important;
+    }
+    ._py-#{$space} {
+      padding-top: #{$space}px !important;
+      padding-bottom: #{$space}px !important;
+    }
+    ._p-#{$space} {
+      padding: #{$space}px !important;
+    }
+  }
+}
+
+@include mq-down(md) {
+  @each $space in $spaceamounts {
+    @each $side in $sides {
+      ._m#{str-slice($side, 0, 1)}-sm-#{$space} {
+        margin-#{$side}: #{$space}px !important;
+      }
+      ._mx-sm-#{$space} {
+        margin-left: #{$space}px !important;
+        margin-right: #{$space}px !important;
+      }
+      ._my-sm-#{$space} {
+        margin-top: #{$space}px !important;
+        margin-bottom: #{$space}px !important;
+      }
+      ._m-sm-#{$space} {
+        margin: #{$space}px !important;
+      }
+      ._p#{str-slice($side, 0, 1)}-sm-#{$space} {
+        padding-#{$side}: #{$space}px !important;
+      }
+      ._px-sm-#{$space} {
+        padding-left: #{$space}px !important;
+        padding-right: #{$space}px !important;
+      }
+      ._py-sm-#{$space} {
+        padding-top: #{$space}px !important;
+        padding-bottom: #{$space}px !important;
+      }
+      ._p-sm-#{$space} {
+        padding: #{$space}px !important;
+      }
+    }
+  }
+}
+
+@include mq-up(md) {
+  @each $space in $spaceamounts {
+    @each $side in $sides {
+      ._m#{str-slice($side, 0, 1)}-md-#{$space} {
+        margin-#{$side}: #{$space}px !important;
+      }
+      ._mx-md-#{$space} {
+        margin-left: #{$space}px !important;
+        margin-right: #{$space}px !important;
+      }
+      ._my-md-#{$space} {
+        margin-top: #{$space}px !important;
+        margin-bottom: #{$space}px !important;
+      }
+      ._m-md-#{$space} {
+        margin: #{$space}px !important;
+      }
+      ._p#{str-slice($side, 0, 1)}-md-#{$space} {
+        padding-#{$side}: #{$space}px !important;
+      }
+      ._px-md-#{$space} {
+        padding-left: #{$space}px !important;
+        padding-right: #{$space}px !important;
+      }
+      ._py-md-#{$space} {
+        padding-top: #{$space}px !important;
+        padding-bottom: #{$space}px !important;
+      }
+      ._p-md-#{$space} {
+        padding: #{$space}px !important;
+      }
+    }
+  }
+}
+
+@include mq-up(lg) {
+  @each $space in $spaceamounts {
+    @each $side in $sides {
+      ._m#{str-slice($side, 0, 1)}-lg-#{$space} {
+        margin-#{$side}: #{$space}px !important;
+      }
+      ._m-lg-#{$space} {
+        margin: #{$space}px !important;
+      }
+      ._mx-lg-#{$space} {
+        margin-left: #{$space}px !important;
+        margin-right: #{$space}px !important;
+      }
+      ._my-lg-#{$space} {
+        margin-top: #{$space}px !important;
+        margin-bottom: #{$space}px !important;
+      }
+      ._p#{str-slice($side, 0, 1)}-lg-#{$space} {
+        padding-#{$side}: #{$space}px !important;
+      }
+      ._px-lg-#{$space} {
+        padding-left: #{$space}px !important;
+        padding-right: #{$space}px !important;
+      }
+      ._py-lg-#{$space} {
+        padding-top: #{$space}px !important;
+        padding-bottom: #{$space}px !important;
+      }
+      ._p-lg-#{$space} {
+        padding: #{$space}px !important;
+      }
+    }
+  }
+}
+
+._m-0 {
+  margin: 0 !important;
+}
+
+._mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@include mq-down(md) {
+  ._m-sm-0 {
+    margin: 0 !important;
+  }
+
+  ._mx-sm-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@include mq-up(md) {
+  ._m-md-0 {
+    margin: 0 !important;
+  }
+
+  ._mx-md-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@include mq-up(lg) {
+  ._m-lg-0 {
+    margin: 0 !important;
+  }
+
+  ._mx-lg-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

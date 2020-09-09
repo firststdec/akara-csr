@@ -1,0 +1,35 @@
+/* up
+---------------------------------------------------------- */
+@mixin mq-up($breakpoint) {
+  $width: '';
+
+  @if ($breakpoint == 'md') {
+    $width: $breakpoint-md;
+  }
+
+  @else {
+    $width: $breakpoint;
+  }
+
+  @media (min-width: '#{$width}px') {
+    @content;
+  }
+}
+
+/* down
+---------------------------------------------------------- */
+@mixin mq-down($breakpoint) {
+  $width: '';
+
+  @if ($breakpoint == 'md') {
+    $width: $breakpoint-md;
+  }
+
+  @else {
+    $width: $breakpoint;
+  }
+
+  @media (max-width: '#{$width}px') {
+    @content;
+  }
+}
