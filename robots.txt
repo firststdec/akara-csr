@@ -1,0 +1,6 @@
+User-Agent: *
+Disallow: /qp5mtcu8/
+Disallow: /wp-admin/
+Disallow: /contact/complete
+
+Sitemap: /sitemap.xml

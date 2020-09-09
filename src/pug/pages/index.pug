@@ -1,0 +1,39 @@
+extends ../layouts/master.pug
+
+block variables
+  -
+    const index = true
+    const meta = {
+      title: 'Akara Group',
+      keyword: 'Akara Group',
+      description: '',
+      goTitle: 'Akara Group',
+      goDescription: '',
+      goImage: '/assets/img/ogp.png',
+      goUrl: '',
+      twitterTitle: 'Akara Group',
+      twitterDescription: '',
+      twitterImage: '/assets/img/ogp.png',
+      twitterUrl: ''
+    }
+
+    const topPage = true
+
+block prepend css
+  link(rel='stylesheet', href='/assets/css/libs/slick.css')
+block append scripts
+  script(src='/assets/js/libs/slick.min.js')
+  script(src='/assets/js/libs/jquery.matchHeight.js')
+  script(src='/assets/js/libs/jquery.waypoints.js')
+
+block outside
+  // loader
+  .c-loader
+    .c-loader__icon
+      p.c-loader__text
+        img(src="/assets/img/common/logo@2x.png", alt="")
+      .loader.simple-circle
+  // /loader
+
+block content
+  div
