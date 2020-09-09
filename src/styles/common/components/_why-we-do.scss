@@ -1,0 +1,52 @@
+.c-why-we-do {
+  max-width: 1327px;
+  margin: 0 auto;
+
+  @include mq-down(md) {
+    padding: 0 20px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    width: 50%;
+
+    @include mq-down(md) {
+      width: 100%;
+    }
+
+    &:not(:first-of-type) {
+      @include mq-down(md) {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 6.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-top: 50px;
+    padding-right: 30px;
+
+    @include mq-down(md) {
+      font-size: 3rem;
+      margin-top: 25px;
+    }
+  }
+
+  &__content {
+    margin-top: 50px;
+    font-size: 2rem;
+    color: $blue;
+    padding-right: 30px;
+
+    @include mq-down(md) {
+      font-size: 1.4rem;
+      margin-top: 25px;
+    }
+  }
+}
