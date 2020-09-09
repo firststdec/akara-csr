@@ -107,40 +107,6 @@
     }
   }
 
-  @include mq-up(lg) {
-    @each $gutter in $space {
-      &.-gutter_lg_#{$gutter} {
-        margin-top: -#{$gutter * 2}px !important;
-        margin-left: -#{$gutter}px !important;
-        margin-right: -#{$gutter}px !important;
-
-        > [class^="col"] {
-          margin-top: #{$gutter * 2}px !important;
-          padding-left: #{$gutter}px !important;
-          padding-right: #{$gutter}px !important;
-        }
-      }
-
-      &.-gutter_x_lg_#{$gutter} {
-        margin-left: -#{$gutter}px !important;
-        margin-right: -#{$gutter}px !important;
-
-        > [class^="col"] {
-          padding-left: #{$gutter}px !important;
-          padding-right: #{$gutter}px !important;
-        }
-      }
-
-      &.-gutter_y_lg_#{$gutter} {
-        margin-top: -#{$gutter * 2}px !important;
-
-        > [class^="col"] {
-          margin-top: #{$gutter * 2}px !important;
-        }
-      }
-    }
-  }
-
   > .col {
     $i: 1;
     $col-count: 12 !default;
@@ -169,14 +135,6 @@
     @include mq-up(md) {
       @for $i from $col-count through 1 {
         &-md-#{$i} {
-          width: $col-width * $i;
-        }
-      }
-    }
-
-    @include mq-up(lg) {
-      @for $i from $col-count through 1 {
-        &-lg-#{$i} {
           width: $col-width * $i;
         }
       }
