@@ -3,6 +3,7 @@ const Webpack = require('webpack')
 const merge = require('webpack-merge')
 const common = require('./webpack.common.js')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
+const globImporter = require('node-sass-glob-importer')
 
 module.exports = merge(common, {
   mode: 'development',
@@ -74,7 +75,12 @@ module.exports = merge(common, {
             }
           },
           {
-            loader: 'sass-loader'
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                importer: globImporter()
+              }
+            }
           }
         ]
       }
