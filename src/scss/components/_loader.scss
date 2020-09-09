@@ -117,7 +117,6 @@
   display: block;
   width: 25%;
   height: 25%;
-  background-color: $yellow;
   border-radius: 100%;
   animation: sk-chase-dot-before 2.0s infinite ease-in-out both;
 }
@@ -138,7 +137,7 @@
 .sk-chase-dot:nth-child(7):before { animation-delay: -0.5s; }
 
 @keyframes sk-chase {
-  100% { transform: rotate(360deg); } 
+  100% { transform: rotate(360deg); }
 }
 
 @keyframes sk-chase-dot {
