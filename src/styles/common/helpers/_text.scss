@@ -1,0 +1,77 @@
+/* ==========================================================
+ Text align
+========================================================== */
+._txt-left { text-align: left !important; }
+._txt-center { text-align: center !important; }
+._txt-right { text-align: right !important; }
+
+@include mq-down(md) {
+  ._txt-sm-left { text-align: left !important; }
+  ._txt-sm-center { text-align: center !important; }
+  ._txt-sm-right { text-align: right !important; }
+}
+
+@include mq-up(md) {
+  ._txt-md-left { text-align: left !important; }
+  ._txt-md-center { text-align: center !important; }
+  ._txt-md-right { text-align: right !important; }
+}
+
+@include mq-up(lg) {
+  ._txt-lg-left { text-align: left !important; }
+  ._txt-lg-center { text-align: center !important; }
+  ._txt-lg-right { text-align: right !important; }
+}
+
+/* ==========================================================
+ Text weight
+========================================================== */
+._txt-normal {
+  font-weight: normal !important;
+}
+
+._txt-bold {
+  font-weight: bold !important;
+}
+
+/* ==========================================================
+ Text color
+========================================================== */
+
+/* ==========================================================
+ Text style
+========================================================== */
+// examplae _txt-underline
+
+/* ==========================================================
+ Text size
+========================================================== */
+@for $i from 8 through 36 {
+  ._txt-size-#{$i} {
+    font-size: #{$i / 10}rem !important;
+  }
+}
+
+@include mq-down(md) {
+  @for $i from 8 through 30 {
+    ._txt-sm-size-#{$i} {
+      font-size: #{$i / 10}rem !important;
+    }
+  }
+}
+
+@include mq-up(md) {
+  @for $i from 8 through 30 {
+    ._txt-md-size-#{$i} {
+      font-size: #{$i / 10}rem !important;
+    }
+  }
+}
+
+@include mq-up(lg) {
+  @for $i from 8 through 30 {
+    ._txt-lg-size-#{$i} {
+      font-size: #{$i / 10}rem !important;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+/* c-image
+---------------------------------------------------------- */
+.c-image {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .caption {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  &.-fullw {
+    img {
+      width: 100%;
+    }
+  }
+  // @include mq-down(sm) {
+  // }
+
+  // @include mq-up(sm) {
+  // }
+
+  // @include mq-down(md) {
+  // }
+
+  // @include mq-up(md) {
+  // }
+
+  // @include mq-down(lg) {
+  // }
+
+  // @include mq-up(lg) {
+  // }
+
+  //  this is all media query that you can use, you can see the value of sm, md and lg in /mixin/_mediaquery.scss
+  // please remove this comment when you have already read it.
+}
