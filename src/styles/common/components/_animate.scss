@@ -3,8 +3,11 @@
 }
 
 .c-box-arrow {
-  text-align: center;
-  margin: 30px 0;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 1;
 }
 
 .c-arrow {
