@@ -73,7 +73,7 @@
     }
 
     &-text {
-      font-size: 1rem;
+      font-size: 1.3rem;
       line-height: 1.5;
 
       @include mq-up(md) {
@@ -98,7 +98,7 @@
     &-title {
       margin-bottom: 14px;
       font-family: $font-base;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
 
       @include mq-up(md) {
         margin-bottom: 35px;
