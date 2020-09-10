@@ -6,7 +6,7 @@
   position: relative;
 
   @include mq-up(md) {
-    margin: 150px -20px 0;
+    margin: 150px 0 0;
     background: #e6e6e6;
   }
 
