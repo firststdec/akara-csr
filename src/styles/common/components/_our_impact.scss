@@ -7,7 +7,9 @@
 
   @include mq-up(md) {
     background: url(/assets/images/our-impact/bg_our_impact_pc.png) center top no-repeat;
+    background-size: cover;
     height: 70vh;
+    min-height: 700px;
   }
 
   &__inner {
