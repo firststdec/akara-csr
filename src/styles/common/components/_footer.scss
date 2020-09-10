@@ -1,9 +1,156 @@
 /* c-footer
 ---------------------------------------------------------- */
 .c-footer {
-  // @include mq-down(md) {
-  // }
+  background-color: #fff;
 
-  // @include mq-up(md) {
-  // }
+  @include mq-up(md) {
+    padding: 0 20px;
+  }
+
+  &__in {
+    padding: 30px 36px 25px;
+
+    @include mq-up(md) {
+      max-width: 1640px;
+      margin: 0 auto;
+      padding: 60px 0 50px;
+    }
+  }
+
+  &__container {
+    @include mq-up(md) {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 106px;
+    margin: 0 auto;
+
+    @include mq-up(md) {
+      width: 17.92%;
+      max-width: 294px;
+    }
+
+    > img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__info {
+    @include mq-up(md) {
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+      margin-left: 9.45%;
+    }
+  }
+
+  &__phone {
+    @include mq-down(md) {
+      margin-top: 20px;
+    }
+
+    @include mq-up(md) {
+      width: 21.34%;
+      max-width: 350px;
+    }
+
+    &-title {
+      margin-bottom: 10px;
+      font-family: 'Kanit', sans-serif;
+      font-size: 1.6rem;
+
+      @include mq-up(md) {
+        margin-bottom: 35px;
+        font-size: 2.3rem;
+      }
+    }
+
+    &-text {
+      font-size: 1rem;
+      line-height: 1.5;
+
+      @include mq-up(md) {
+        font-size: 2.3rem;
+      }
+    }
+  }
+
+  &__address {
+    margin-top: 35px;
+
+    @include mq-up(md) {
+      width: 28.65%;
+      max-width: 470px;
+      margin-top: 0;
+      margin-left: 5.48%;
+    }
+
+    &-title {
+      margin-bottom: 14px;
+      font-family: 'Kanit', sans-serif;
+      font-size: 1.2rem;
+
+      @include mq-up(md) {
+        margin-bottom: 35px;
+        font-size: 2.3rem;
+      }
+    }
+
+    &-text {
+      font-size: 1.3rem;
+      line-height: 1.3;
+
+      @include mq-up(md) {
+        font-size: 1.8rem;
+        line-height: 1.22;
+      }
+    }
+  }
+
+  &__social {
+    display: none;
+
+    @include mq-up(md) {
+      display: block;
+    }
+
+    &-title {
+      margin-bottom: 35px;
+      font-family: 'Kanit', sans-serif;
+      font-size: 2.3rem;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+
+      > a {
+        margin-left: 20px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 2px solid #211e1f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+
+    @include mq-up(md) {
+      margin-top: 50px;
+      padding-top: 50px;
+      font-size: 1.9rem;
+    }
+  }
 }
