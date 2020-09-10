@@ -63,7 +63,7 @@
 
     &-title {
       margin-bottom: 10px;
-      font-family: 'Kanit', sans-serif;
+      font-family: $font-base;
       font-size: 1.6rem;
 
       @include mq-up(md) {
@@ -97,7 +97,7 @@
 
     &-title {
       margin-bottom: 14px;
-      font-family: 'Kanit', sans-serif;
+      font-family: $font-base;
       font-size: 1.2rem;
 
       @include mq-up(md) {
@@ -128,7 +128,7 @@
 
     &-title {
       margin-bottom: 35px;
-      font-family: 'Kanit', sans-serif;
+      font-family: $font-base;
       font-size: 2.3rem;
     }
 
@@ -150,7 +150,7 @@
     margin-top: 40px;
     padding-top: 25px;
     border-top: 2px solid #211e1f;
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-poppins;
     font-size: 0.9rem;
     text-align: center;
 
