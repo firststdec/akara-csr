@@ -11,6 +11,12 @@
     flex-wrap: wrap;
   }
 
+  &__frame {
+    @include mq-down(md) {
+      text-align: center;
+    }
+  }
+
   &__box {
     width: 100%;
 
