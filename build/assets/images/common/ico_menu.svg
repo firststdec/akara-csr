@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="Group_1022" data-name="Group 1022" transform="translate(-302 -58)">
+    <circle id="Ellipse_371" data-name="Ellipse 371" cx="18" cy="18" r="18" transform="translate(302 58)" fill="#fbaf00"/>
+    <g id="bar-chart-2" transform="translate(310.348 83.897) rotate(-90)">
+      <line id="Line_1" data-name="Line 1" y1="12.285" transform="translate(14.917 7.02)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line id="Line_2" data-name="Line 2" y1="19.304" transform="translate(7.897)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line id="Line_3" data-name="Line 3" y1="7.02" transform="translate(0 12.285)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
