@@ -45,23 +45,25 @@
       display: flex;
       justify-content: space-between;
       flex: 1;
-      margin-left: 9.45%;
+      margin-left: 7.45%;
     }
   }
 
   &__phone {
-    @include mq-down(md) {
-      margin-top: 20px;
-    }
+    margin-top: 20px;
 
     @include mq-up(md) {
-      width: 21.34%;
-      max-width: 350px;
+      width: 50%;
+      margin-top: 0;
+    }
+
+    @include mq-up(1260) {
+      width: 33.33%;
     }
 
     &-title {
       margin-bottom: 10px;
-      font-family: 'Kanit', sans-serif;
+      font-family: $font-base;
       font-size: 1.6rem;
 
       @include mq-up(md) {
@@ -84,15 +86,18 @@
     margin-top: 35px;
 
     @include mq-up(md) {
-      width: 28.65%;
-      max-width: 470px;
       margin-top: 0;
-      margin-left: 5.48%;
+      width: 50%;
+      padding-left: 20px;
+    }
+
+    @include mq-up(1260) {
+      width: 33.33%;
     }
 
     &-title {
       margin-bottom: 14px;
-      font-family: 'Kanit', sans-serif;
+      font-family: $font-base;
       font-size: 1.2rem;
 
       @include mq-up(md) {
@@ -115,13 +120,15 @@
   &__social {
     display: none;
 
-    @include mq-up(md) {
+    @include mq-up(1260) {
       display: block;
+      width: 33.33%;
+      padding-left: 20px;
     }
 
     &-title {
       margin-bottom: 35px;
-      font-family: 'Kanit', sans-serif;
+      font-family: $font-base;
       font-size: 2.3rem;
     }
 
@@ -143,7 +150,7 @@
     margin-top: 40px;
     padding-top: 25px;
     border-top: 2px solid #211e1f;
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-poppins;
     font-size: 0.9rem;
     text-align: center;
 
