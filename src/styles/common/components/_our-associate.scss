@@ -214,6 +214,8 @@
     font-size: 1.1rem;
     text-align: center;
 
+    @include is-opacity;
+
     @include mq-up(md) {
       border-radius: 100px;
     }
