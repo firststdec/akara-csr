@@ -15,3 +15,13 @@ export const getOffsetLeft = element => {
   }
   return offsetLeft
 }
+
+export const goToSection = element => {
+  const targetId = element.getAttribute('href')
+  const targetElmt = document.querySelector(targetId)
+  const offsetTop = getOffsetTop(targetElmt)
+  window.scrollTo({
+    top: offsetTop,
+    behavior: 'smooth'
+  })
+}

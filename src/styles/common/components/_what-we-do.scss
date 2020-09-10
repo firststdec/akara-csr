@@ -2,11 +2,9 @@
 .c-what-we-do {
   $this: &;
 
-  margin-top: 65px;
   position: relative;
 
   @include mq-up(md) {
-    margin: 150px 0 0;
     background: #e6e6e6;
   }
 

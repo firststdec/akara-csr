@@ -1,14 +1,8 @@
 import '../styles/index.scss'
-import Module from './modules/module'
-import Clickhere from './modules/clickhere'
+import Gnav from './modules/gnav'
+import Arrow from './modules/arrow'
 
-const module = new Module({
-  target: '.js-module-target'
+const gnav = new Gnav()
+const arrow = new Arrow({
+  target: '.c-arrow'
 })
-
-const clickhere = new Clickhere({
-  target: '#btn-click-here'
-})
-
-module.init()
-clickhere.init()
