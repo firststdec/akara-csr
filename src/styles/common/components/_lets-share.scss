@@ -93,6 +93,10 @@
           margin-top: 22px;
         }
       }
+
+      > a {
+        @include is-opacity;
+      }
     }
   }
 }

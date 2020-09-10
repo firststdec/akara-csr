@@ -1,4 +1,27 @@
-.c-hero Hero
+.c-hero
+  .c-hero__bg
+  .c-hero__main
+    h1.c-hero__logo
+      a.c-hero__logo-link(href='/')
+        img(src='/assets/images/common/logo.svg', alt='')
+    button.c-hero__btn-menu(type='button') Menu
+    .c-hero-heading
+      .c-hero-heading__tag AKARA
+      h2.c-hero-heading__title อาสาปันอิ่ม<br>ปันยิ้มให้สังคม
+      a.c-hero-heading__btn-video(href='#dummy', target='_blank') Watch the video
+    .c-hero-count
+      .c-hero-count__title ยอดร่วมบริจาคล่าสุด
+      .c-hero-count__list
+        .c-hero-count__list-item
+          .c-hero-count__number 6
+          .c-hero-count__unit เดือน
+        .c-hero-count__list-item
+          .c-hero-count__number 8,500
+          .c-hero-count__unit ฟอง
+        .c-hero-count__list-item
+          .c-hero-count__number 650
+          .c-hero-count__unit มื้อ
+    .c-hero__arrow
   //- Nav Global
   include ./_gnav
 // /hero
