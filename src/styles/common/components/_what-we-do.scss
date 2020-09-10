@@ -1,6 +1,78 @@
 
 .c-what-we-do {
+  $this: &;
+
+  margin-top: 65px;
+  position: relative;
+
+  @include mq-up(md) {
+    margin-top: 150px;
+    background: #e6e6e6;
+  }
+
   &__inner {
-    max-width: 1920px;
+    @include mq-up(md) {
+      max-width: 1920px;
+    }
+  }
+
+  &__label {
+    margin-top: -20px;
+  }
+
+  &__heading {
+    color: $white;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    @include mq-up(md) {
+      font-size: 6.1rem;
+      line-height: 1.3;
+    }
+  }
+
+  &__content {
+    color: $white;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-top: 20px;
+
+    @include mq-up(md) {
+      font-size: 2rem;
+      margin-top: 50px;
+    }
+
+    p {
+      &:not(:first-of-type) {
+        margin-top: 20px;
+
+        @include mq-up(md) {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  &__content-box {
+    width: 80%;
+    margin: 0 auto;
+    background: $blue;
+    padding: 30px;
+    position: relative;
+    font-size: 1.3rem;
+    margin-top: -25px;
+
+    @include mq-up(md) {
+      width: 42.18%;
+      position: absolute;
+      top: 50%;
+      right: 7.291%;
+      transform: translateY(-50%);
+      padding: 4.157% 4.157% 4.157% 3.557%;
+    }
+
+    .c-heading-type1 {
+      color: $blue;
+    }
   }
 }

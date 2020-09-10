@@ -1,9 +1,9 @@
 .c-why-we-do {
-  max-width: 1327px;
-  margin: 0 auto;
+  padding: 0 20px;
 
-  @include mq-down(md) {
-    padding: 0 20px;
+  @include mq-up(md) {
+    max-width: 1327px;
+    margin: 0 auto;
   }
 
   &__inner {
@@ -12,41 +12,45 @@
   }
 
   &__box {
-    width: 50%;
+    width: 100%;
 
-    @include mq-down(md) {
-      width: 100%;
+    @include mq-up(md) {
+      width: 50%;
     }
 
     &:not(:first-of-type) {
-      @include mq-down(md) {
-        margin-top: 25px;
+      margin-top: 25px;
+
+      @include mq-up(md) {
+        margin-top: 0;
       }
     }
   }
 
   &__heading {
-    font-size: 6.5rem;
+    font-size: 3rem;
+    margin-top: 25px;
     font-weight: 600;
-    line-height: 1.1;
-    margin-top: 50px;
-    padding-right: 30px;
+    line-height: 1.2;
 
-    @include mq-down(md) {
-      font-size: 3rem;
-      margin-top: 25px;
+    @include mq-up(md) {
+      font-size: 6.5rem;
+      line-height: 1.1;
+      margin-top: 50px;
+      padding-right: 30px;
     }
   }
 
   &__content {
-    margin-top: 50px;
-    font-size: 2rem;
-    color: $blue;
-    padding-right: 30px;
+    font-size: 1.4rem;
+    margin-top: 25px;
+    font-weight: 300;
 
-    @include mq-down(md) {
-      font-size: 1.4rem;
-      margin-top: 25px;
+    @include mq-up(md) {
+      margin-top: 50px;
+      font-size: 2rem;
+      color: $blue;
+      padding-right: 30px;
     }
   }
 }
