@@ -1,0 +1,221 @@
+/* c-our-associate
+---------------------------------------------------------- */
+.c-our-associate {
+  $root: &;
+
+  background: url(/assets/images/our-associate/bg_associate.jpg) center no-repeat;
+  background-size: cover;
+
+  @include mq-up(md) {
+    padding: 0 20px;
+  }
+
+  &__in {
+    padding: 35px 35px 60px;
+    text-align: center;
+
+    @include mq-up(md) {
+      max-width: 1260px;
+      margin: 0 auto;
+      padding: 95px 0 135px;
+    }
+  }
+
+  &__label {
+    height: 34px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+
+    @include mq-up(md) {
+      height: 55px;
+      margin-bottom: 20px;
+      font-size: 1.7rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-align: center;
+
+    @include mq-up(md) {
+      font-size: 5.9rem;
+    }
+  }
+
+  &__list {
+    margin-top: 30px;
+
+    @include mq-up(md) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      margin-left: -70px;
+    }
+  }
+
+  &__item {
+    @include mq-down(md) {
+      &:not(:first-child) {
+        margin-top: 50px;
+      }
+    }
+
+    @include mq-up(md) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      width: 33.33%;
+      padding-left: 70px;
+
+      &:nth-child(3n-1) {
+        #{$root}__card {
+          &:first-child {
+            order: 2;
+          }
+
+          &:last-child {
+            order: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &__card {
+    $card: &;
+    $author: #{$root}__author;
+
+    box-shadow: 0 15px 30px rgba(#000, 0.1);
+
+    @include mq-down(md) {
+      &:last-child {
+        margin-top: 50px;
+      }
+    }
+
+    @include mq-up(md) {
+      margin-top: 70px;
+    }
+
+    &-image {
+      > img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &-info {
+      position: relative;
+      padding: 30px 20px 25px;
+      background-color: $blue;
+      color: #fff;
+
+      @include mq-up(md) {
+        padding: 30px 25px 25px;
+      }
+
+      &::before {
+        position: absolute;
+        top: -21px;
+        right: 36px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 15px 22px 15px;
+        border-color: transparent transparent $blue transparent;
+        content: '';
+      }
+    }
+
+    &-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 80px;
+      font-size: 1.6rem;
+      line-height: 1.6;
+
+      @include mq-up(md) {
+        min-height: 140px;
+        font-size: 2rem;
+        line-height: 1.8;
+      }
+    }
+
+    &-image + &-info {
+      background-color: #fff;
+      color: #0b0b0b;
+
+      #{$author}-position {
+        color: #9b9b9b;
+      }
+
+      #{$author}-name {
+        color: #0b0b0b;
+      }
+
+      &::before {
+        border-color: transparent transparent #fff transparent;
+      }
+    }
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-align: left;
+
+    &-image {
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+
+      @include mq-up(md) {
+        width: 49px;
+        height: 49px;
+      }
+    }
+
+    &-info {
+      padding-left: 16px;
+      line-height: 1.4;
+    }
+
+    &-position {
+      font-size: 1.2rem;
+      color: #9b9b9b;
+
+      @include mq-up(md) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &-name {
+      font-size: 1.4rem;
+      color: #fff;
+
+      @include mq-up(md) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 128px;
+    height: 40px;
+    margin: 60px auto 0;
+    border-radius: 100px;
+    border: 1px solid $blue;
+    font-size: 1.1rem;
+    text-align: center;
+
+    @include mq-up(md) {
+      border-radius: 100px;
+    }
+  }
+}
