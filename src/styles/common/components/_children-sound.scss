@@ -1,0 +1,98 @@
+.c-sec-children-sound {
+  position: relative;
+
+  &__inner {
+    padding: 35px 0 85px;
+    max-width: 1604px;
+    margin: 0 auto;
+
+    @include mq-up(md) {
+      padding: 55px 60px 55px;
+    }
+
+    @include mq-up(md) {
+      padding: 70px 0 110px;
+    }
+  }
+}
+
+.c-children-sound {
+  position: relative;
+
+  &__image {
+    position: relative;
+    padding-top: 15px;
+
+    @include mq-up(md) {
+      position: relative;
+      width: 56%;
+      padding-top: 25px;
+      margin-left: auto;
+    }
+  }
+
+  &__heading {
+    position: absolute;
+    top: 0;
+    left: 36px;
+    z-index: 1;
+
+    @include mq-up(md) {
+      left: 90px;
+    }
+  }
+
+  &__box-quote {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    padding: 30px 35px;
+    background-color: $blue;
+    color: $white;
+
+    @include mq-down(md) {
+      margin: -35px auto 0;
+    }
+
+    @include mq-up(md) {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 48%;
+      min-height: 250px;
+      padding: 50px 90px;
+    }
+
+    @include mq-up(1400) {
+      min-height: 520px;
+    }
+  }
+
+  &__quote {
+    font-size: 2.2rem;
+    font-style: italic;
+    line-height: 1.5;
+
+    @include mq-up(1400) {
+      font-size: 3rem;
+    }
+  }
+
+  &__children {
+    margin-top: 50px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+
+    @include mq-up(md) {
+      font-size: 1.6rem;
+    }
+
+    @include mq-up(1400) {
+      font-size: 2.7rem;
+    }
+  }
+}
