@@ -4,4 +4,5 @@ export const isHide = 'is-hide'
 export const isOpen = 'is-show'
 export const isClose = 'is-close'
 export const isLocked = 'is-locked'
+export const isFixed = 'is-fixed'
 export const breakpointMD = 897

@@ -1,6 +1,5 @@
-import $ from 'jquery'
-import { isShow, breakpointMD } from '../_variables'
-import { getOffsetTop, goToSection } from '../_functions'
+import { isShow, isFixed, breakpointMD } from '../_variables'
+import { goToSection } from '../_functions'
 
 export default class Gnav {
   constructor() {
@@ -9,17 +8,21 @@ export default class Gnav {
   }
 
   stickyMenu() {
-    const $problems = $('#problems')
+    const problems = document.querySelector('#problems')
 
-    $(window).on('scroll', e => {
+    window.addEventListener('scroll', e => {
       if (window.innerWidth < breakpointMD) {
         return false
       }
 
-      const scrollTop = $(e.currentTarget).scrollTop()
-      const start = $problems.offset().top - $(this.gnav).height()
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+      const start = problems.offsetTop - this.gnav.offsetHeight
 
-      $(this.gnav).toggleClass('is-fixed', scrollTop >= start)
+      if (scrollTop >= start) {
+        this.gnav.classList.add(isFixed)
+      } else {
+        this.gnav.classList.remove(isFixed)
+      }
     })
   }
 
