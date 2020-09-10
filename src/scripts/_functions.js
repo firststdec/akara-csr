@@ -26,7 +26,7 @@ export const goToSection = element => {
   window.scrollTo({
     top:
       window.innerWidth >= breakpointMD
-        ? offsetTop - document.querySelector('#gnav').clientHeight
+        ? offsetTop - document.querySelector('#gnav').offsetHeight
         : offsetTop,
     behavior: 'smooth',
   })
