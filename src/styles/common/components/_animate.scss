@@ -1,5 +1,5 @@
 .c-arrow-animaton {
-  animation: vertical 2s ease-in-out infinite alternate;
+  animation: vertical 1.5s ease-in-out infinite alternate;
 }
 
 .c-box-arrow {
@@ -20,11 +20,11 @@
 }
 
 @keyframes horizontal {
-  0% { transform: translateX(-5px); }
+  0% { transform: translateX(-7px); }
   100% { transform: translateX(0); }
 }
 
 @keyframes vertical {
-  0% { transform: translateY(-5px); }
+  0% { transform: translateY(-7px); }
   100% { transform: translateY(0); }
 }

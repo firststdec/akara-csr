@@ -1,14 +1,20 @@
 .c-why-we-do {
-  padding: 0 20px;
+  padding: 50px 20px 65px;
+  background-color: $grey;
 
   @include mq-up(md) {
-    max-width: 1327px;
-    margin: 0 auto;
+    padding: 80px 0 110px;
+  }
+
+  @include mq-up(1400) {
+    padding: 120px 0 140px;
   }
 
   &__inner {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1327px;
+    margin: 0 auto;
   }
 
   &__frame {
