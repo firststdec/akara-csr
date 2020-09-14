@@ -1,9 +1,9 @@
 [production staging]
 >5%
-last 2 versions
+last 3 versions
 Firefox ESR
 not ie < 11
 
 [development]
-last 2 versions
+last 3 versions
 not ie < 11

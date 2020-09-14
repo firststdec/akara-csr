@@ -36,7 +36,7 @@ export default class Gnav {
   closeMenu() {
     this.gnav.classList.remove(isShow)
     setTimeout(() => {
-      this.gnav.style.display = 'none'
+      this.gnav.style.display = ''
     }, 100)
   }
 

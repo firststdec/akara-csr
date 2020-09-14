@@ -1,3 +1,4 @@
+import $ from 'jquery'
 import { breakpointMD } from './_variables'
 
 export const getOffsetTop = element => {
@@ -23,11 +24,13 @@ export const goToSection = element => {
   const targetElmt = document.querySelector(targetId)
   const offsetTop = getOffsetTop(targetElmt)
 
-  window.scrollTo({
-    top:
-      window.innerWidth >= breakpointMD
-        ? offsetTop - document.querySelector('#gnav').offsetHeight
-        : offsetTop,
-    behavior: 'smooth',
-  })
+  $('html, body').animate(
+    {
+      scrollTop:
+        window.innerWidth >= breakpointMD
+          ? offsetTop - document.querySelector('#gnav').offsetHeight
+          : offsetTop,
+    },
+    400
+  )
 }

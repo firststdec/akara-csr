@@ -1,44 +1,102 @@
 .c-why-we-do {
+  $root: &;
+
   position: relative;
   padding: 50px 20px 65px;
   background-color: $grey;
 
-  @include mq-up(md) {
-    padding: 80px 0 110px;
-  }
-
   @include mq-up(1024) {
-    padding: 80px 20px 110px;
+    padding: 80px 140px 110px;
   }
 
   @include mq-up(1400) {
-    padding: 120px 0 140px;
+    padding: 120px 140px 140px;
   }
 
   &__inner {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1327px;
+    position: relative;
+    max-width: 1326px;
     margin: 0 auto;
+  }
+
+  &__slider {
+    display: block;
+
+    @include mq-up(1200) {
+      display: flex;
+
+      &:nth-child(2n) {
+        #{$root}__box {
+          &:first-child {
+            order: 2;
+            padding-right: 0;
+            padding-left: 30px;
+          }
+
+          &:last-child {
+            order: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &__slider-prev,
+  &__slider-next {
+    position: absolute;
+    top: 50%;
+    right: -158px;
+    z-index: 2;
+    display: block;
+    width: 68px;
+    height: 68px;
+    background: url(/assets/images/why-we-do/ico_next.svg) center no-repeat;
+    background-size: 68px auto;
+    transform: translateX(-50%);
+
+    @include mq-down(1099) {
+      display: none;
+    }
+
+    &.is-disabled {
+      opacity: 0.4;
+    }
+  }
+
+  &__slider-prev {
+    right: auto;
+    left: -90px;
+    transform: translateX(-50%) rotate(180deg);
   }
 
   &__frame {
     @include mq-down(md) {
       text-align: center;
     }
+
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 
   &__box {
     width: 100%;
 
-    @include mq-up(md) {
+    @include mq-up(1200) {
       width: 50%;
     }
 
-    &:not(:first-of-type) {
+    &:first-child {
+      @include mq-up(1200) {
+        padding-right: 30px;
+      }
+    }
+
+    &:last-child {
       margin-top: 25px;
 
-      @include mq-up(md) {
+      @include mq-up(1200) {
         margin-top: 0;
       }
     }
@@ -51,10 +109,9 @@
     line-height: 1.2;
 
     @include mq-up(md) {
-      font-size: 6.5rem;
+      font-size: 6rem;
       line-height: 1.1;
       margin-top: 50px;
-      padding-right: 30px;
     }
   }
 
@@ -64,10 +121,9 @@
     font-weight: 300;
 
     @include mq-up(md) {
-      margin-top: 50px;
+      margin-top: 30px;
       font-size: 2rem;
       color: $blue;
-      padding-right: 30px;
     }
   }
 }

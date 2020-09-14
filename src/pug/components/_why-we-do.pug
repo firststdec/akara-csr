@@ -1,17 +1,33 @@
 .c-why-we-do(id='problems')
   .c-why-we-do__inner
-    .c-why-we-do__box
-      h2.c-heading-type1 Why We Do
-      .c-why-we-do__heading
-        |ปัญหาความยากจน
-        br._d-sm-block._d-md-none
-        |และขาดแคลน
-      .c-why-we-do__content
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi felis, auctor vitae vestibulum vel, consequat eu dolor. Nam pellentesque euismod laoreet. Aliquam sed nisl porttitor nisl laoreet semper nec iaculis nibh. Curabitur in tortor lorem.
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi felis, auctor vitae vestibulum vel, consequat eu dolor. Nam pellentesque euismod laoreet. Aliquam sed nisl porttitor nisl laoreet semper nec iaculis nibh. Curabitur in tortor lorem.
-    .c-why-we-do__box
-      figure.c-why-we-do__frame
-        img.c-why-we-doimage(src="/assets/images/why-we-do/boy-180437_1920.jpg", alt="")
+    .c-why-we-do__slider-prev.is-disabled
+    .c-why-we-do__slider-next
+    .c-why-we-do__container.swiper-container.js-what-we-do-slider
+      .c-why-we-do__wrapper.swiper-wrapper
+        .c-why-we-do__slider.swiper-slide
+          .c-why-we-do__box
+            p.c-heading-type1.c-why-we-do__label Why We Do
+            p.c-why-we-do__heading ปัญหาความยากจนและขาดแคลน
+            .c-why-we-do__content
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi felis, auctor vitae vestibulum vel, consequat eu dolor. Nam pellentesque euismod laoreet. Aliquam sed nisl porttitor nisl laoreet semper nec iaculis nibh. Curabitur in tortor lorem.
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi felis, auctor vitae vestibulum vel, consequat eu dolor. Nam pellentesque euismod laoreet. Aliquam sed nisl porttitor nisl laoreet semper nec iaculis nibh. Curabitur in tortor lorem.
+          .c-why-we-do__box
+            figure.c-why-we-do__frame
+              img.c-why-we-doimage(src="/assets/images/why-we-do/img_whywedo_01.jpg", alt="ปัญหาความยากจนและขาดแคลน")
+        //- c-why-we-do__slider
+        .c-why-we-do__slider.swiper-slide
+          .c-why-we-do__box
+            p.c-heading-type1.c-why-we-do__label Why We Do
+            p.c-why-we-do__heading เด็กๆ ที่มีความยากจน
+            .c-why-we-do__content
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi felis, auctor vitae vestibulum vel, consequat eu dolor. Nam pellentesque euismod laoreet. Aliquam sed nisl porttitor nisl laoreet semper nec iaculis nibh. Curabitur in tortor lorem.
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi felis, auctor vitae vestibulum vel, consequat eu dolor. Nam pellentesque euismod laoreet. Aliquam sed nisl porttitor nisl laoreet semper nec iaculis nibh. Curabitur in tortor lorem.
+          .c-why-we-do__box
+            figure.c-why-we-do__frame
+              img.c-why-we-doimage(src="/assets/images/why-we-do/img_whywedo_02.jpg", alt="เด็กๆ ที่มีความยากจน")
+        //- c-why-we-do__slider
+    //- c-why-we-do__container
+
   .c-box-arrow._d-sm-none
     a.c-arrow(href='#campaign')
       img.c-arrow-animaton(src="/assets/images/common/ico_arrow_down_black.svg", alt="")
@@ -33,6 +49,7 @@
       .c-box-arrow
         a.c-arrow(href='#how-we-do')
           img.c-arrow-animaton(src="/assets/images/common/ico_arrow_down_white.svg", alt="")
+
 .c-how-we-do(id='how-we-do')
   .c-how-we-do__inner
     .c-how-we-do__label

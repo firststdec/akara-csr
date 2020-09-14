@@ -14,6 +14,19 @@
     }
   }
 
+  &__media {
+    width: 100%;
+
+    @include mq-up(1500) {
+      max-width: 1230px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
   &__label {
     position: absolute;
     top: -15px;
@@ -70,13 +83,19 @@
     font-size: 1.3rem;
     margin-top: -25px;
 
-    @include mq-up(md) {
-      width: 42.18%;
+    @include mq-up(1500) {
       position: absolute;
       top: 50%;
-      right: 7.291%;
+      right: 40px;
+      z-index: 1;
+      width: 809px;
+      padding: 75px 70px 140px;
       transform: translateY(-50%);
-      padding: 4.157% 4.157% 6.157% 3.557%;
+    }
+
+    @include mq-up(1700) {
+      left: 50%;
+      right: auto;
     }
 
     .c-heading-type1 {
