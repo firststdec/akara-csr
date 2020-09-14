@@ -102,6 +102,8 @@
   &__link {
     display: block;
     text-align: center;
+
+    @include is-opacity;
   }
 
   &__text {

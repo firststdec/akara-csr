@@ -17,7 +17,7 @@
   &__media {
     width: 100%;
 
-    @include mq-up(1500) {
+    @include mq-up(1400) {
       max-width: 1230px;
     }
 
@@ -78,17 +78,18 @@
     width: 80%;
     margin: 0 auto;
     background: $blue;
-    padding: 30px 30px 50px;
+    padding: 30px 30px 70px;
     position: relative;
     font-size: 1.3rem;
     margin-top: -25px;
 
-    @include mq-up(1500) {
+    @include mq-up(1400) {
       position: absolute;
       top: 50%;
       right: 40px;
       z-index: 1;
-      width: 809px;
+      width: 50%;
+      max-width: 809px;
       padding: 75px 70px 140px;
       transform: translateY(-50%);
     }
