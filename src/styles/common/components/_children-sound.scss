@@ -1,6 +1,10 @@
 .c-sec-children-sound {
   position: relative;
 
+  @include mq-up(md) {
+    padding: 0 20px;
+  }
+
   &__inner {
     padding: 35px 0 85px;
     max-width: 1604px;
@@ -17,6 +21,8 @@
 }
 
 .c-children-sound {
+  $root: &;
+
   position: relative;
 
   &__image {
@@ -34,11 +40,13 @@
   &__heading {
     position: absolute;
     top: 0;
-    left: 36px;
-    z-index: 1;
+    left: 50%;
+    z-index: 3;
+    text-align: center;
 
     @include mq-up(md) {
-      left: 90px;
+      top: 60px;
+      margin-left: -33px;
     }
   }
 
@@ -64,10 +72,11 @@
       justify-content: space-between;
       width: 48%;
       min-height: 250px;
-      padding: 50px 90px;
+      padding: 30px 40px;
     }
 
     @include mq-up(1400) {
+      padding: 50px 80px;
       min-height: 520px;
     }
   }
@@ -93,6 +102,39 @@
 
     @include mq-up(1400) {
       font-size: 2.7rem;
+    }
+  }
+
+  & &__pagination {
+    position: relative;
+    margin-top: 35px;
+
+    @include mq-up(md) {
+      position: absolute;
+      left: 0 !important;
+      bottom: 0 !important;
+      width: 48% !important;
+      margin-top: 0;
+      margin-bottom: 2%;
+    }
+
+    @include mq-up(1400) {
+      margin-bottom: 4%;
+    }
+
+    .swiper-pagination-bullet {
+      background-color: #fff;
+      border: 1px solid $blue;
+
+      @include mq-up(md) {
+        width: 18px;
+        height: 18px;
+        margin: 0 6px !important;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $blue;
     }
   }
 }

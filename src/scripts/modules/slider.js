@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import Swiper from 'swiper'
+import Swiper from 'swiper/bundle'
 import 'swiper/swiper-bundle.css'
 
 export const whyWeDoSlider = () => {
@@ -28,5 +28,19 @@ export const whyWeDoSlider = () => {
   
   $('.c-why-we-do__slider-next').on('click', () => {
     slider.slideNext()
+  })
+}
+
+export const childrenSoundSlider= () => {
+  const slider = new Swiper('.js-children-sound-slider', {
+    loop: false,
+    speed: 500,
+    spaceBetween: 50,
+    slidesPerView: 1,
+    pagination: {
+      el: '.js-children-sound-pagination',
+      type: 'bullets'
+    },
+    resistanceRatio: 0
   })
 }
