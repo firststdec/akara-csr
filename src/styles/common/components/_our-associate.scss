@@ -80,6 +80,10 @@
         }
       }
     }
+
+    &.is-hidden {
+      display: none;
+    }
   }
 
   &__card {
@@ -213,6 +217,7 @@
     border: 1px solid $blue;
     font-size: 1.1rem;
     text-align: center;
+    outline: none;
 
     @include is-opacity;
 

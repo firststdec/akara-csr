@@ -13,7 +13,7 @@ module.exports = merge(common, {
     filename: 'assets/js/app.js',
   },
   optimization: {
-    minimize: false
+    minimize: true
   },
   plugins: [
     new Webpack.DefinePlugin({

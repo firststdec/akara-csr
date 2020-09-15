@@ -7,6 +7,7 @@ export const whyWeDoSlider = () => {
     loop: false,
     speed: 500,
     spaceBetween: 50,
+    draggable: true,
     pagination: false,
     resistanceRatio: 0
   })
@@ -37,9 +38,11 @@ export const childrenSoundSlider= () => {
     speed: 500,
     spaceBetween: 50,
     slidesPerView: 1,
+    draggable: true,
     pagination: {
       el: '.js-children-sound-pagination',
-      type: 'bullets'
+      type: 'bullets',
+      clickable: true
     },
     resistanceRatio: 0
   })
