@@ -2,60 +2,111 @@
   $this: &;
 
   background: #f2f2f2;
-  padding-bottom: 50px;
+  padding: 50px 0;
 
   @include mq-up(md) {
     padding: 80px 0;
   }
 
   &__inner {
+    position: relative;
     width: 100%;
 
     @include mq-up(md) {
       margin: auto;
-      overflow-x: scroll;
-      padding: 0 20px;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    z-index: 1;
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq-down(md) {
+      display: none;
+    }
+
+    &-next,
+    &-prev {
+      position: relative;
+      display: block;
+      width: 68px;
+      height: 40px;
+      background: url(/assets/images/activity/ico_next.svg) center no-repeat;
+      background-size: 68px auto;
+      cursor: pointer;
+      outline: none;
+
+      @include is-opacity;
+
+      &.is-disabled {
+        opacity: 0.4 !important;
+        cursor: default;
+      }
+    }
+
+    &-prev {
+      top: -1px;
+      transform: rotate(180deg);
     }
   }
 
   &__box-title {
-    padding: 40px 0 0 35px;
+    padding: 0 30px;
 
     @include mq-up(md) {
-      width: 1636px;
+      max-width: 1636px;
       margin: auto;
-      padding: 0;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
-  // &__box-label {
-
-  // }
-
   &__heading {
+    margin-top: 10px;
     font-size: 3rem;
     color: $blue;
     font-weight: 600;
   }
 
   &__box-list {
-    padding-left: 35px;
+    margin-top: 30px;
+    padding: 0 35px;
 
     @include mq-up(md) {
-      padding: 50px 0 0;
+      margin-top: 50px;
+      padding: 0 20px;
     }
   }
 
   &__list {
-    display: flex;
+    overflow: auto;
     white-space: nowrap;
-    overflow-x: scroll;
-    margin: 50px 0 0;
+
+    @include mq-down(md) {
+      display: flex;
+      white-space: nowrap;
+    }
 
     @include mq-up(md) {
-      flex-wrap: wrap;
-      width: 1636px;
-      margin: auto;
+      max-width: 1636px + 40px;
+      margin: 0 auto;
+    }
+  }
+
+  &__row {
+    display: flex;
+    white-space: nowrap;
+
+    @include mq-down(md) {
+      &:last-child {
+        padding-left: 30px;
+      }
     }
   }
 
@@ -149,11 +200,11 @@
         }
       }
     }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
-
-  // &__card {
-
-  // }
 
   &__frame {
     width: 300px;
