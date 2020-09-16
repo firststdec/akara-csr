@@ -1,12 +1,12 @@
 .c-our-impact {
-  background: url(/assets/images/our-impact/bg_our_impact.png) center center no-repeat;
+  background: url(/csr/assets/images/our-impact/bg_our_impact.png) center center no-repeat;
   background-size: cover;
   height: 100vh;
   margin: 0;
   position: relative;
 
   @include mq-up(md) {
-    background: url(/assets/images/our-impact/bg_our_impact_pc.png) center top no-repeat;
+    background: url(/csr/assets/images/our-impact/bg_our_impact_pc.png) center top no-repeat;
     background-size: cover;
     height: 70vh;
     min-height: 700px;

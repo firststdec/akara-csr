@@ -10,7 +10,7 @@ module.exports = merge(common, {
   stats: 'errors-only',
   bail: true,
   output: {
-    filename: 'assets/js/app.js',
+    filename: 'csr/assets/js/app.js',
   },
   optimization: {
     minimize: true
@@ -21,7 +21,7 @@ module.exports = merge(common, {
     }),
     new Webpack.optimize.ModuleConcatenationPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'assets/css/style.css'
+      filename: 'csr/assets/css/style.css'
     })
   ],
   module: {

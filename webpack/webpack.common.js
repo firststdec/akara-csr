@@ -6,7 +6,7 @@ const routes = require('./route')
 
 const pages = routes.map(function (value, index) {
   return new HtmlWebpackPlugin({
-    filename: value.filename,
+    filename: 'csr/' + value.filename,
     template: Path.resolve(__dirname, '../' + value.template),
     minify: false
   })
@@ -24,11 +24,8 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
-        { from: Path.resolve(__dirname, '../src/images'), to: 'assets/images/' }
+        { from: Path.resolve(__dirname, '../src/images'), to: 'csr/assets/images/' }
       ]
-    }),
-    new HtmlWebpackPlugin({
-      template: Path.resolve(__dirname, '../src/pug/pages/index.pug'),
     }),
   ].concat(pages),
   resolve: {

@@ -3,7 +3,7 @@
 .c-our-associate {
   $root: &;
 
-  background: url(/assets/images/our-associate/bg_associate.jpg) center no-repeat;
+  background: url(/csr/assets/images/our-associate/bg_associate.jpg) center no-repeat;
   background-size: cover;
 
   @include mq-up(md) {
