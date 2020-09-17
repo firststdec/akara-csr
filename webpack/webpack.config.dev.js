@@ -41,7 +41,7 @@ module.exports = merge(common, {
     new Webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
-  })
+    })
   ],
   module: {
     rules: [
