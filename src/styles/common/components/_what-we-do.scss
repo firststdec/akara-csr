@@ -102,5 +102,9 @@
     .c-heading-type1 {
       color: $blue;
     }
+
+    > .is-animated {
+      transition-delay: 0.6s;
+    }
   }
 }

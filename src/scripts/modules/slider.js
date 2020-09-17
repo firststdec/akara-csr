@@ -32,7 +32,7 @@ export const whyWeDoSlider = () => {
   })
 }
 
-export const childrenSoundSlider= () => {
+export const childrenSoundSlider = () => {
   const slider = new Swiper('.js-children-sound-slider', {
     loop: false,
     speed: 500,
@@ -45,5 +45,35 @@ export const childrenSoundSlider= () => {
       clickable: true
     },
     resistanceRatio: 0
+  })
+}
+
+export const heroSlider = () => {
+  const slider = new Swiper('.js-hero-slider', {
+    loop: false,
+    speed: 500,
+    spaceBetween: 0,
+    draggable: false,
+    pagination: false,
+    resistanceRatio: 0
+  })
+
+  slider.on('slideChange', () => {
+    $('.c-hero__nav-prev').toggleClass(
+      'is-disabled',
+      slider.isBeginning
+    )
+    $('.c-hero__nav-next').toggleClass(
+      'is-disabled',
+      slider.isEnd
+    )
+  })
+
+  $('.c-hero__nav-prev').on('click', () => {
+    slider.slidePrev()
+  })
+  
+  $('.c-hero__nav-next').on('click', () => {
+    slider.slideNext()
   })
 }

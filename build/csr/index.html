@@ -8,30 +8,48 @@
     <title>AKARA GROUP - อาสาปันอิ่ม ปันยิ้มให้สังคม</title>
     <meta name="keyword" content="AKARA GROUP - อาสาปันอิ่ม ปันยิ้มให้สังคม">
     <meta name="description" content="AKARA GROUP - อาสาปันอิ่ม ปันยิ้มให้สังคม">
-  <link href="assets/css/style.css" rel="stylesheet"></head>
+  <link href="./assets/css/style.css" rel="stylesheet"></head>
   <body>
-<div class="c-hero">
-  <div class="c-hero__bg"></div>
+<div class="c-hero js-inview">
+  <div class="c-hero__nav js-hero-nav"><span class="c-hero__nav-prev is-disabled"></span><span class="c-hero__nav-next"></span></div>
+  <div class="c-hero__bg">
+    <div class="c-hero__bg-container swiper-container js-hero-slider">
+      <div class="c-hero__bg-wrapper swiper-wrapper">
+        <div class="c-hero__bg-item swiper-slide">
+          <video autoplay="" playsinline="" muted="" preload="" loop="">
+            <source src="assets/video/sample_mv_01.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="c-hero__bg-item swiper-slide">
+          <video autoplay="" playsinline="" muted="" preload="" loop="">
+            <source src="assets/video/sample_mv_01.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="c-hero__main">
     <h1 class="c-hero__logo"><a class="c-hero__logo-link" href="/"><img src="assets/images/common/logo.svg" alt="AKARA อาสาปันอิ่ม ปันยิ้มให้สังคม"></a></h1>
     <button class="c-hero__btn-menu" type="button" id="btn-open-menu">Menu</button>
     <div class="c-hero-heading">
-      <div class="c-hero-heading__tag">AKARA</div>
-      <h2 class="c-hero-heading__title">อาสาปันอิ่ม<br>ปันยิ้มให้สังคม</h2><a class="c-hero-heading__btn-video" href="http://akaragroup.co.th/csr/?fbclid=IwAR3FOfu4NZjP-THe9q7slH8-Qe6NQfo8B2p2Ed81JADLleXVdjygHw3cJ3A#dummy" target="_blank">Watch the video</a>
+      <div class="js-inview u-fade-in-up">
+        <div class="c-hero-heading__tag">AKARA</div>
+        <h2 class="c-hero-heading__title">อาสาปันอิ่ม<br>ปันยิ้มให้สังคม</h2><a class="c-hero-heading__btn-video js-modal-video" href="https://www.youtube.com/embed/8dVSeHLBYsQ?autoplay=1" target="_blank">Watch the video</a>
+      </div>
     </div>
-    <div class="c-hero-count">
+    <div class="c-hero-count js-inview">
       <div class="c-hero-count__title">ยอดร่วมบริจาคล่าสุด</div>
-      <div class="c-hero-count__list">
+      <div class="c-hero-count__list js-total-donate">
         <div class="c-hero-count__list-item">
-          <div class="c-hero-count__number">6</div>
+          <div class="c-hero-count__number js-inview-number" data-number="6">0</div>
           <div class="c-hero-count__unit">เดือน</div>
         </div>
         <div class="c-hero-count__list-item">
-          <div class="c-hero-count__number">8,500</div>
+          <div class="c-hero-count__number js-inview-number" data-number="8500">0</div>
           <div class="c-hero-count__unit">ฟอง</div>
         </div>
         <div class="c-hero-count__list-item">
-          <div class="c-hero-count__number">650</div>
+          <div class="c-hero-count__number js-inview-number" data-number="650">0</div>
           <div class="c-hero-count__unit">มื้อ</div>
         </div>
       </div>
@@ -60,7 +78,7 @@
     <div class="l-contents">
       <div class="l-container">
 <div class="c-why-we-do" id="problems">
-  <div class="c-why-we-do__inner">
+  <div class="c-why-we-do__inner js-inview u-fade-in-up">
     <div class="c-why-we-do__slider-prev is-disabled"></div>
     <div class="c-why-we-do__slider-next"></div>
     <div class="c-why-we-do__container swiper-container js-what-we-do-slider">
@@ -96,16 +114,18 @@
   <div class="c-box-arrow _d-sm-none"><a class="c-arrow" href="#campaign"><img class="c-arrow-animaton" src="assets/images/common/ico_arrow_down_black.svg" alt=""></a></div>
 </div>
 <div class="c-what-we-do" id="campaign">
-  <div class="c-what-we-do__inner">
+  <div class="c-what-we-do__inner js-inview u-fade-in">
     <div class="c-what-we-do__media"><a href="https://youtube.com" target="_blank">
         <div class="media"><img src="assets/images/what-we-do/img_what_we_do.jpg" alt=""></div></a></div>
     <div class="c-what-we-do__content-box">
       <div class="c-what-we-do__label">
         <h2 class="c-heading-type1">What We Do</h2>
       </div>
-      <div class="c-what-we-do__heading">อาสาปันอิ่ม ปันยิ้มให้สังคม</div>
-      <div class="c-what-we-do__content">
-        <p>โครงการ ‘อัครา อาสาปันอิ่ม ปันยิ้มให้สังคม’ ร่วมกับ โครงการ ‘มื้อนี้ พี่เลี้ยง’ ภายใต้การดาเนินงานของกองทุนเพื่อความเสมอภาคทางการศึกษา (กสศ.) เกิดขึ้นจากวัตถุประสงค์เพื่อช่วยเหลือเด็ก ๆ ภายในโครงการของ กสศ. ที่เกิดปัญหาขาดแคลนอาหารและภาวะทุพโภชนาการ สืบเนื่องมาจากปัญหาความยากจนและเผชิญกับวิกฤติโควิด -19 เรามุ่งมั่นที่จะช่วยเหลือนักเรียนยากจนพิเศษภายใต้โครงการของ กสศ. กว่า 100,000 คนทั่วประเทศ ให้ได้มีโภชนาการทางด้านอาหารและความเป็นอยู่ที่ดีขึ้น</p>
+      <div class="js-inview u-fade-in-up">
+        <div class="c-what-we-do__heading">อาสาปันอิ่ม ปันยิ้มให้สังคม</div>
+        <div class="c-what-we-do__content">
+          <p>โครงการ ‘อัครา อาสาปันอิ่ม ปันยิ้มให้สังคม’ ร่วมกับ โครงการ ‘มื้อนี้ พี่เลี้ยง’ ภายใต้การดาเนินงานของกองทุนเพื่อความเสมอภาคทางการศึกษา (กสศ.) เกิดขึ้นจากวัตถุประสงค์เพื่อช่วยเหลือเด็ก ๆ ภายในโครงการของ กสศ. ที่เกิดปัญหาขาดแคลนอาหารและภาวะทุพโภชนาการ สืบเนื่องมาจากปัญหาความยากจนและเผชิญกับวิกฤติโควิด -19 เรามุ่งมั่นที่จะช่วยเหลือนักเรียนยากจนพิเศษภายใต้โครงการของ กสศ. กว่า 100,000 คนทั่วประเทศ ให้ได้มีโภชนาการทางด้านอาหารและความเป็นอยู่ที่ดีขึ้น</p>
+        </div>
       </div>
       <div class="c-box-arrow"><a class="c-arrow" href="#how-we-do"><img class="c-arrow-animaton" src="assets/images/common/ico_arrow_down_white.svg" alt=""></a></div>
     </div>
@@ -260,7 +280,7 @@
           <div class="c-children-sound__item swiper-slide">
             <div class="c-children-sound">
               <div class="c-children-sound__image">
-                <figure class="c-children-sound__fig"><img src="assets/images/children-sound/img_children_02.jpg" alt=""></figure>
+                <figure class="c-children-sound__fig"><img src="assets//images/children-sound/img_children_02.jpg" alt=""></figure>
               </div>
               <div class="c-children-sound__box-quote">
                 <div class="c-children-sound__quote">"ขอบคุณมากๆเลย ครับ<br>เพื่อนๆ และผมอิ่มมากครับ ผมกินไป 2 จานเลยแล้วก็ได้ของกลับบ้านด้วย ขอบคุณครับ ฮ่าๆๆ"</div>
@@ -493,5 +513,5 @@
   </div>
 </div>
 <!-- /footer-->
-  <script src="assets/js/app.js"></script></body>
+  <script src="./assets/js/app.js"></script></body>
 </html>

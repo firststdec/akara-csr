@@ -24,7 +24,8 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
-        { from: Path.resolve(__dirname, '../src/images'), to: 'csr/assets/images/' }
+        { from: Path.resolve(__dirname, '../src/images'), to: 'csr/assets/images/' },
+        { from: Path.resolve(__dirname, '../src/video'), to: 'csr/assets/video/' }
       ]
     }),
   ].concat(pages),
@@ -41,7 +42,7 @@ module.exports = {
         type: 'javascript/auto'
       },
       {
-        test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+        test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4)(\?.*)?$/,
         use: {
           loader: 'file-loader',
           options: {

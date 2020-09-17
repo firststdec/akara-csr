@@ -37,7 +37,11 @@ module.exports = merge(common, {
       failOnError: false,
       quiet: false,
       emitErrors: true
-    })
+    }),
+    new Webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+  })
   ],
   module: {
     rules: [
