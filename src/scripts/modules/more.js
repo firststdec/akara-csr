@@ -25,7 +25,6 @@ export const ourAssociateMore = () => {
   }
 
   $button.on('click', () => {
-    console.log(visible, total)
     if (visible < total) {
       $list
         .children()
