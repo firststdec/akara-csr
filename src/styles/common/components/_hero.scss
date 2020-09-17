@@ -3,6 +3,7 @@
 .c-hero {
   $root: &;
 
+  overflow: hidden;
   position: relative;
   min-height: 667px;
   height: 100vh;
@@ -66,7 +67,7 @@
     position: absolute;
     bottom: 200px;
     right: 4.167vw;
-    z-index: 4240px;
+    z-index: 4;
     display: flex;
     width: 180px;
     justify-content: space-between;
