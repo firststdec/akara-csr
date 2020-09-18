@@ -25,6 +25,14 @@
     @include mq-up(md) {
       width: 33.33%;
       padding-left: 10.7%;
+
+      &:nth-child(2n) {
+        transition-delay: 0.4s;
+      }
+
+      &:nth-child(3n) {
+        transition-delay: 0.8s;
+      }
     }
   }
 

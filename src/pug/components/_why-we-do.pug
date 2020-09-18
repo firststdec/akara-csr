@@ -32,12 +32,22 @@
       img.c-arrow-animaton(src="/csr/assets/images/common/ico_arrow_down_black.svg", alt="")
 
 .c-what-we-do(id='campaign')
-  .c-what-we-do__inner.js-inview.u-fade-in
-    .c-what-we-do__media
-      a(href="https://youtube.com", target="_blank")
-        .media
-          img(src="/csr/assets/images/what-we-do/img_what_we_do.jpg", alt="")
-    .c-what-we-do__content-box
+  .c-what-we-do__inner
+    .c-what-we-do__media.js-inview.u-fade-in
+      a.c-what-we-do__media-link.js-modal-video(href='https://www.youtube.com/embed/8dVSeHLBYsQ?autoplay=1', target='_blank')
+      video(
+        autoplay=""
+        playsinline=""
+        muted=""
+        preload=""
+        loop=""
+      )
+        source(
+          src="/csr/assets/video/sample_mv_01.mp4"
+          type="video/mp4"
+        )
+
+    .c-what-we-do__content-box.js-inview.u-fade-in
       .c-what-we-do__label
         h2.c-heading-type1 What We Do
       .js-inview.u-fade-in-up
@@ -50,12 +60,12 @@
 
 .c-how-we-do(id='how-we-do')
   .c-how-we-do__inner
-    .c-how-we-do__label
+    .c-how-we-do__label.js-inview.u-fade-in-pop
       h2.c-heading-type1.c-heading-type1--blue How We Do
-    .c-how-we-do__msg
+    .c-how-we-do__msg.js-inview.u-fade-in-pop
       p We strive for better community empowerment, and livelihood improvement an entry point.
     .c-how-we-do__list
-      .c-how-we-do__item
+      .c-how-we-do__item.js-inview.u-fade-in-pop
         .c-how-we-do__card
           figure.c-how-we-do__icon
             img(src="/csr/assets/images/how-we-do/ico_how_we_do_01.svg", alt="หยิบ 1 แพ็ค ส่งต่อ 2 ฟอง")
@@ -65,7 +75,7 @@
             | ส่งต่อ 2 ฟอง
           .c-how-we-do__text
             p เพียงมองหาสติกเกอร์ อัครา อาสาปันอิ่มปันยิ้มให้สังคม ที่ติดอยู่บนหน้าแพ็ค (แพ็ค 10 ฟอง) ทุก ๆ การซื้อ 1 แพ็ค อัคราร่วมบริจาคไข่ไก่เพิ่มอีก 2 ฟอง เพื่อมอบให้กับน้อง ๆ ที่ขาดแคลน โดยมีเป้าหมายการบริจาคทั้งหมด 100,000 ฟอง
-      .c-how-we-do__item
+      .c-how-we-do__item.js-inview.u-fade-in-pop
         .c-how-we-do__card
           figure.c-how-we-do__icon
             img(src="/csr/assets/images/how-we-do/ico_how_we_do_02.svg", alt="ร่วมส่งต่อกำลังใจ")
@@ -73,7 +83,7 @@
             |ร่วมส่งต่อกำลังใจ
           .c-how-we-do__text
             p ทุก ๆ การซื้อ 1 แพ็ค คุณก็สามารถร่วมเป็นส่วนหนึ่งในการส่งต่อกำลังใจให้กับน้อง ๆ ได้ง่าย ๆ เพียง เขียนข้อความลงบนแผ่นพับที่อยู่ภายในกล่อง ถ่ายภาพลง Social Media แล้วติด # มาที่ #อัคราอาสาปันอิ่มปันยิ้มให้สังคม ข้อความที่ถูกส่งเข้ามาเราจะนำไปมอบต่อให้กับน้อง ๆ ภายในโครงการ
-      .c-how-we-do__item
+      .c-how-we-do__item.js-inview.u-fade-in-pop
         .c-how-we-do__card
           figure.c-how-we-do__icon
             img(src="/csr/assets/images/how-we-do/ico_how_we_do_03.svg", alt="แบ่งปันรอยยิ้ม")

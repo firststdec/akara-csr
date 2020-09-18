@@ -6,7 +6,7 @@ const countUpDown = ($number, baseNumber, resultNumber) => {
   $number.countTo({
     from: baseNumber,
     to: resultNumber,
-    speed: 800,
+    speed: 600,
     formatter: (value, options) => {
       return Math.abs(value)
         .toFixed(options.decimals)
@@ -17,21 +17,16 @@ const countUpDown = ($number, baseNumber, resultNumber) => {
 
 export const animate = () => {
   $(window).on('load', () => {
-    // $('.js-total-donate').find('[data-number]').each(function () {
-    //   const number = $(this).data('number')
-    //   countUpDown($(this), 0, number)
-    // })
-
     $('.js-inview-number').one('inview', function(event, isInView) {
       if (isInView) {
         setTimeout(() => {
           const number = $(this).data('number')
           countUpDown($(this), 0, number)
-        }, 700)
+        }, 900)
       }
     })
 
-    $('.js-inview').on('inview', function(event, isInView) {
+    $('.js-inview').one('inview', function(event, isInView) {
       $(this).addClass('is-animated')
     })
   })
